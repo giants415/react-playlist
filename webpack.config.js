@@ -1,6 +1,3 @@
-//copied from https://gist.github.com/iamshaunjp/a1c8fb653ddd5d27c3e38ab55e3c0a44
-
-
 var path = require('path');
 
 module.exports = {
