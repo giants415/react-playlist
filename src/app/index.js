@@ -12,7 +12,7 @@ var TodoComponent = React.createClass({
     var todos = this.state.todos;
     todos = todos.map(function(item, index){
       return(
-        <li>{item}</li>
+        <TodoItem item={item} key={index}/>
       )
     });
     return(
@@ -23,6 +23,19 @@ var TodoComponent = React.createClass({
     );
   }// render
 });
+
+//Creeate TodoItem component
+var TodoItem = React.createClass({
+  render:function(){
+    return(
+      <li>
+        <div className="todo-item">
+          <span className="item-name">{this.props.item}</span>
+        </div>
+      </li>
+    );
+  }
+})
 
 var myCheese = {
   name: 'Monterey Jack',
